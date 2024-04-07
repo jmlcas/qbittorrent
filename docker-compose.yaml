@@ -7,13 +7,13 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - WEBUI_PORT=8200
+      - WEBUI_PORT=8090
       - TORRENTING_PORT=6881
     volumes:
       - ./appdata/config:/config
       - ./downloads:/downloads
     ports:
-      - 8200:8080
+      - 8090:8090
       - 6881:6881
       - 6881:6881/udp
     restart: unless-stopped
